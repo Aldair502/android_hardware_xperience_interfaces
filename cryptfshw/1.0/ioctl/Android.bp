@@ -27,7 +27,6 @@ cc_binary {
         "libbase",
         "libbinder",
         "libhidlbase",
-        "libhidltransport",
         "libutils",
         "vendor.qti.hardware.cryptfshw@1.0",
     ],
