@@ -14,16 +14,12 @@
 
 cc_binary {
     name: "vendor.qti.hardware.cryptfshw@1.0-service-dlsym-qti",
-    defaults: ["hidl_defaults"],
+    defaults: [
+        "hidl_defaults",
+        "qti_cryptfshw_qsee_defaults",
+    ],
     init_rc: ["vendor.qti.hardware.cryptfshw@1.0-service-dlsym-qti.rc"],
     owner: "qti",
-    product_variables: {
-        xperience: {
-            should_skip_waiting_for_qsee: {
-                cflags: ["-DSKIP_WAITING_FOR_QSEE"],
-            },
-        },
-    },
     relative_install_path: "hw",
     srcs: [
         "CryptfsHw.cpp",
