@@ -3,16 +3,13 @@
 hidl_interface {
     name: "vendor.xperience.power@1.0",
     root: "vendor.xperience",
+    system_ext_specific: true,
     srcs: [
         "types.hal",
         "IXPeriencePower.hal",
     ],
     interfaces: [
         "android.hidl.base@1.0",
-    ],
-    types: [
-        "XPerienceFeature",
-        "XPeriencePowerHint",
     ],
     gen_java: true,
 }

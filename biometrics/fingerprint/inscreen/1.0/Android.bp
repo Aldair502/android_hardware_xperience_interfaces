@@ -3,6 +3,7 @@
 hidl_interface {
     name: "vendor.xperience.biometrics.fingerprint.inscreen@1.0",
     root: "vendor.xperience",
+    system_ext_specific: true,
     srcs: [
         "IFingerprintInscreen.hal",
         "IFingerprintInscreenCallback.hal",
